@@ -4,7 +4,7 @@
 
 **Dash of Charm** is a feature-packed recipe discovery platform designed for food lovers. Using the **MealDB API**, it allows users to explore, search, and filter recipes effortlessly. Whether you're looking for a specific dish, browsing categories, or craving something new, Dash of Charm is your go-to recipe companion.
 
-## Deployed URL - https://dashofcharm.onrender.com/
+Deployed URL - https://dashofcharm.onrender.com/
 
 ## Key Features
 
