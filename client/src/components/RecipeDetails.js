@@ -114,8 +114,10 @@ export default function RecipeDetails() {
             <div className="all-recipes-top-tab"></div>
             <div className="rd-disp">
               <div>
+                <h1 className="rd-disp-meal-name">{meal.strMeal}</h1>
+                <div className="rd-recipe-detail-icons"></div>
                 <img
-                  id="home-thumb"
+                  id="rd-thumb"
                   src={getCustomImage(meal.idMeal, meal.strMealThumb)}
                   alt=""
                 />

@@ -54,6 +54,11 @@ const CustomImages = [
     imageUrl:
       "https://images.pexels.com/photos/17906661/pexels-photo-17906661/free-photo-of-plate-of-soup-with-toasted-bread-and-butter-on-a-table.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
+  {
+    idMeal: "53085",
+    imageUrl:
+      "https://images.pexels.com/photos/6896379/pexels-photo-6896379.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
   // { idMeal: "53049", imageUrl: "path/to/custom-image-3.jpg" },
   // { idMeal: "53049", imageUrl: "path/to/custom-image-3.jpg" },
   // { idMeal: "53049", imageUrl: "path/to/custom-image-3.jpg" },

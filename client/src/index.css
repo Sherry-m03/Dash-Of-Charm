@@ -739,78 +739,20 @@ h3 {
 .rd-disp-meal-name {
   width: 50vw;
   margin-top: 0;
+  margin-bottom: 0;
   color: #060606;
   line-height: 3rem;
   font-family: "dancing script";
-
   font-size: 3rem;
 }
 
-.rd-avatar-media {
-  display: flex;
-  align-items: center;
-  margin-bottom: 1rem;
-}
-
-.rd-disp-avatar {
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-  margin-right: 1rem;
-  object-fit: cover;
-  object-position: 100% 0;
-}
-.rd-avatar-info {
-  display: flex;
-  flex-direction: column;
-  row-gap: 0;
-  padding-right: 1.5rem;
-  border-right: 1px solid #eae9e7;
-  margin-right: 1rem;
-}
-
-.rd-avatar-info p {
-  margin: 0;
-  height: 1.2rem;
-  font-size: 0.9rem;
-}
-
-.media-tab {
-  display: flex;
-  align-items: center;
-  padding: 0 0.5rem;
-  height: 2rem;
-  width: 5rem;
-  margin-left: 1rem;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 0.7rem;
-}
-
-#facebook-tab {
-  background-color: #0866ff;
-}
-#pinterest-tab {
-  background-color: #e60019;
-}
-#x-tab {
-  background-color: #000000;
-}
-
-#x-tab img {
-  height: 1.6rem;
-  width: 1.6rem;
-  margin-bottom: 0;
-}
-#linkedin-tab {
-  background-color: #0a66c2;
-}
-
-.media-tab img {
-  height: 1rem;
-  width: 1rem;
-  margin-bottom: 0.3rem;
-  margin-right: 0.4rem;
+#rd-thumb {
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  height: 120vh;
+  width: 52vw;
+  margin-top: 1rem;
 }
 
 .rd-recipe-detail-icons {

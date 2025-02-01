@@ -312,7 +312,6 @@ export default function Recipe() {
                         alt={meal.strMeal}
                         onClick={() => getRecipeDeatils(meal.idMeal)}
                       />
-
                       <div className="meal-card-time-diff">
                         <div>
                           <img
