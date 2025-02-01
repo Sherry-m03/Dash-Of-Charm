@@ -151,13 +151,6 @@ export default function RecipeDetails() {
                     </div>
                   </div>
                 </div>
-                <h3 className="rd-summary">
-                  Lorem ipsum dolor sit amet, consec tetuipisicing elit, sed do
-                  eiusmod tempor dunt ut labore et dolore magna aliqut enim ad
-                  minim veniamquis nostrud exercitation ullamco oris nisi ut
-                  aliquip ex ea commodnsequat. Duis auolor in reprehenderit in
-                  voluptate velit esse cillum dolore eu
-                </h3>
                 {ingredients.length > 0 && (
                   <>
                     <div className="rd-ingredients">
