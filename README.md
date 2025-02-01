@@ -1,43 +1,43 @@
-# 🍽️ Dash of Charm - A Delightful Recipe Explorer
+🍽️ Dash of Charm - A Delightful Recipe Explorer
 
-## 🌟 Overview
+## Overview
 
 **Dash of Charm** is a feature-packed recipe discovery platform designed for food lovers. Using the **MealDB API**, it allows users to explore, search, and filter recipes effortlessly. Whether you're looking for a specific dish, browsing categories, or craving something new, Dash of Charm is your go-to recipe companion.
 
 ---
 
-## 🎯 Key Features
+## Key Features
 
-### 🔍 **Effortless Recipe Search**
+### **Effortless Recipe Search**
 
 - Instantly find recipes by entering keywords in the search bar.
 - Supports real-time updates without requiring a page refresh.
 
-### 🏷️ **Browse by Category**
+### **Browse by Category**
 
 - Easily filter recipes based on categories like **Dessert, Seafood, Vegan, Pasta, and more**.
 - One-click selection for a seamless browsing experience.
 
-### 🎲 **Discover Random Meals**
+### **Discover Random Meals**
 
 - Not sure what to cook? Try the **random meal generator** for spontaneous inspiration.
 - A great way to explore new cuisines and flavors.
 
-### 🍽️ **Detailed Recipe Pages**
+### **Detailed Recipe Pages**
 
 - View in-depth details for each recipe, including:
   - **Ingredients & Measurements**
   - **Step-by-step Cooking Instructions**
   - **Custom Food Images** (Overrides default images for a more curated experience)
 
-### 🔄 **Smooth Pagination & Navigation**
+### **Smooth Pagination & Navigation**
 
 - Browse through an extensive list of meals with an easy-to-use **pagination system**.
 - Never lose track of where you left off.
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - ⚛ **React.js** – Core framework
 - 🌍 **React Router** – Seamless navigation
@@ -46,7 +46,7 @@
 
 ---
 
-## 🚀 Setup Instructions
+## Setup Instructions
 
 1. Clone the repository:
 
@@ -70,7 +70,7 @@ npm start
 
 ---
 
-## 🛠️ How to Use Dash of Charm
+## How to Use Dash of Charm
 
 ### **Search for a Recipe**
 
@@ -94,9 +94,8 @@ npm start
 
 - Click on a meal card to open its **detailed recipe page**.
 - You’ll find:
-  - 📜 **Ingredient List** with exact measurements
-  - 📖 **Step-by-Step Cooking Instructions**
-  - 🖼️ **High-Quality Image of the Dish**
+  - **Ingredient List** with exact measurements
+  - **Step-by-Step Cooking Instructions**
 
 ### **Enjoy Cooking!**
 
@@ -106,12 +105,12 @@ npm start
 
 ---
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
-- ✅ User authentication & saved favorite recipes
-- 📅 Meal planning & shopping list feature
-- 🍏 Advanced filtering (dietary restrictions, cook time, difficulty level)
+- User authentication & saved favorite recipes
+- Meal planning & shopping list feature
+- Advanced filtering (dietary restrictions, cook time, difficulty level)
 
 ---
 
-🚀 Happy Cooking with **Dash of Charm**! 🍽✨
+Happy Cooking with **Dash of Charm**! 🍽✨

@@ -6,18 +6,34 @@ import SideBar from "./SideBar";
 import CustomImages from "./CustomImages";
 import TagImages from "./TagImages";
 
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 export default function RecipeDetails() {
   const location = useLocation();
+  const navigate = useNavigate();
   const [loading, setLoading] = useState(true);
   const [meal, setMeal] = useState([]);
+  const [mayLikeMeal, setMayLikeMeal] = useState([]);
 
   useEffect(() => {
-    setLoading(true);
+    const fetchMayLikeMeals = async () => {
+      const meal = location.state?.meal;
+      setMeal(meal);
+      try {
+        setLoading(true);
 
-    const meal = location.state?.meal;
-    setMeal(meal);
+        const response = await fetch(
+          `https://www.themealdb.com/api/json/v1/1/filter.php?c=${meal.strCategory}`
+        );
+        const data = await response.json();
+        console.log(data);
+        console.log(meal.strCategory);
+        setMayLikeMeal(data.meals.slice(0, 3) || []);
+      } catch (error) {
+        console.error("Error fetching category meals:", error);
+      }
+    };
+    fetchMayLikeMeals();
     const timeout = setTimeout(() => {
       setLoading(false);
     }, 3000);
@@ -25,7 +41,7 @@ export default function RecipeDetails() {
     return () => clearTimeout(timeout);
   }, [location.pathname]);
 
-  console.log(meal);
+  // console.log(meal);
   const images = [
     "load1.png",
     "load2.png",
@@ -59,7 +75,7 @@ export default function RecipeDetails() {
       ingredients.push(`${measure} ${ingredient}`);
     }
   }
-  console.log(ingredients);
+  // console.log(ingredients);
 
   const instructions = meal.strInstructions
     ?.split("\n")
@@ -74,7 +90,11 @@ export default function RecipeDetails() {
     (img) => img.tag === meal.strCategory?.toLowerCase()
   );
   const tagImage = tagCheck ? tagCheck.imageURL : [];
-  console.log(tagCheck);
+  // console.log(tagCheck);
+
+  const handleQuerySet = (q) => {
+    navigate("/recipes", { state: q });
+  };
 
   return (
     <div className="recipe-details">
@@ -194,14 +214,46 @@ export default function RecipeDetails() {
                   ))}
                 </div>
 
-                <div className="rd-ingredients">
-                  <h2>You like:</h2>
-                  <div className="rd-ingredients-div"></div>
+                <div className="rd-may-like">
+                  <h2>You may also like:</h2>
+                  <div className="rd-like-div "></div>
+                </div>
+                <div className="like-meal-grid">
+                  {loading && <p>Loading...</p>}
+                  {mayLikeMeal.map((meal, index) => (
+                    <div key={meal.idMeal} className="meal-card">
+                      <img
+                        style={{ objectFit: "cover" }}
+                        src={getCustomImage(meal.idMeal, meal.strMealThumb)}
+                        alt={meal.strMeal}
+                        onClick={() => handleQuerySet(meal.strMeal)}
+                      />
+
+                      <div className="meal-card-time-diff">
+                        <div>
+                          <img
+                            src="https://uxwing.com/wp-content/themes/uxwing/download/time-and-date/clock-line-icon.png"
+                            alt="time taken"
+                          />
+                          <p>30 minutes</p>
+                        </div>
+                        <div>
+                          <img
+                            src="https://uxwing.com/wp-content/themes/uxwing/download/hand-gestures/thumbs-up-line-icon.svg"
+                            alt="dificulty"
+                          />
+                          <p>medium</p>
+                        </div>
+                      </div>
+                      <h3>{meal.strMeal}</h3>
+                    </div>
+                  ))}
                 </div>
               </div>
               <SideBar />
             </div>
           </div>
+          <Footer />
         </>
       )}
     </div>

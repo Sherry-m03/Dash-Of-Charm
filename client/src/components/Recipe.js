@@ -134,6 +134,7 @@ export default function Recipe() {
     }
   }, [selectedCategory, mealQuery]);
 
+  console.log(meals);
   console.log(categoryMeals);
 
   const handleCheckboxChange = (category) => {
@@ -205,11 +206,19 @@ export default function Recipe() {
     return () => clearInterval(interval);
   }, [loading, images.length]);
 
-  const getRecipeDeatils = (idOfMeal) => {
-    const MealToGet = meals.find((m) => m.idMeal === idOfMeal);
-    console.log(MealToGet);
-    console.log(idOfMeal);
-    navigate("/recipe-details", { state: { meal: MealToGet } });
+  const getRecipeDeatils = async (idOfMeal) => {
+    try {
+      const response = await fetch(
+        `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${idOfMeal}`
+      );
+      const data = await response.json();
+      const MealToGet = data.meals[0];
+      console.log(MealToGet);
+      console.log(idOfMeal);
+      navigate("/recipe-details", { state: { meal: MealToGet } });
+    } catch (error) {
+      console.error("Error navigating to recipe details:", error);
+    }
   };
 
   return (
