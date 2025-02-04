@@ -11,7 +11,7 @@ export default function SideBar({ handleQuerySet }) {
         <h3 className="home-about-me-head">ABOUT ME</h3>
         <img
           className="home-about-me-chef"
-          src="https://cdn.pixabay.com/photo/2023/11/03/12/23/ai-generated-8362920_1280.png"
+          src="Shreya_Profile_pic.png"
           alt="woman chef"
         />
         <p className="home-about-me-info">
