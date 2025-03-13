@@ -25,20 +25,20 @@ export default function SideBar({ handleQuerySet }) {
         <div className="home-media-icons">
           <Link to="https://www.linkedin.com/in/shreya-masta/">
             <img
-              src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/linkedin-square-icon.png"
+              src="https://cdn-icons-png.flaticon.com/128/3536/3536505.png"
               alt="linkedIn"
             />
           </Link>
           <Link to="https://shreya-masta.onrender.com/">
             <img
-              src="https://uxwing.com/wp-content/themes/uxwing/download/location-travel-map/world-globe-line-icon.png"
-              alt="linkedI</Link>n"
+              src="https://cdn-icons-png.flaticon.com/128/1006/1006771.png"
+              alt="website"
             />
           </Link>
           <Link to="https://github.com/Sherry-m03">
             <img
-              src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/github-icon.png"
-              alt="linkedIn"
+              src="https://cdn-icons-png.flaticon.com/128/15527/15527540.png"
+              alt="github"
             />
           </Link>
         </div>

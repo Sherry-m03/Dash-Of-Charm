@@ -315,7 +315,7 @@ export default function Recipe() {
                       <div className="meal-card-time-diff">
                         <div>
                           <img
-                            src="https://uxwing.com/wp-content/themes/uxwing/download/time-and-date/clock-line-icon.png"
+                            src="https://cdn-icons-png.flaticon.com/128/6834/6834351.png"
                             alt="time taken"
                           />
                           <p>30 minutes</p>

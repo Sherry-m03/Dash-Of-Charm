@@ -125,7 +125,7 @@ export default function RecipeDetails() {
                   <div className="rd-recipe-detail-icons-details">
                     <div id="icon-details">
                       <img
-                        src="https://uxwing.com/wp-content/themes/uxwing/download/time-and-date/clock-line-icon.png"
+                        src="https://cdn-icons-png.flaticon.com/128/6834/6834351.png"
                         alt=""
                       />
                       <p>30 minutes</p>
@@ -146,7 +146,7 @@ export default function RecipeDetails() {
                     </div>
                     <div id="icon-details">
                       <img
-                        src="https://uxwing.com/wp-content/themes/uxwing/download/e-commerce-currency-shopping/tag-line-icon.png"
+                        src="https://cdn-icons-png.flaticon.com/128/1620/1620735.png"
                         alt=""
                       />
                       <p>{meal.strCategory}</p>
@@ -227,7 +227,7 @@ export default function RecipeDetails() {
                       <div className="meal-card-time-diff">
                         <div>
                           <img
-                            src="https://uxwing.com/wp-content/themes/uxwing/download/time-and-date/clock-line-icon.png"
+                            src="https://cdn-icons-png.flaticon.com/128/6834/6834351.png"
                             alt="time taken"
                           />
                           <p>30 minutes</p>

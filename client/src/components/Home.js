@@ -94,7 +94,7 @@ export default function Home() {
                 <div className="home-cake-time-dificulty">
                   <div>
                     <img
-                      src="https://uxwing.com/wp-content/themes/uxwing/download/time-and-date/clock-line-icon.png"
+                      src="https://cdn-icons-png.flaticon.com/128/6834/6834351.png"
                       alt="time taken"
                     />
                     <p>30 minutes</p>
@@ -125,7 +125,7 @@ export default function Home() {
                     <div className="home-recipe-time-dificulty">
                       <div>
                         <img
-                          src="https://uxwing.com/wp-content/themes/uxwing/download/time-and-date/clock-line-icon.png"
+                          src="https://cdn-icons-png.flaticon.com/128/6834/6834351.png"
                           alt="time taken"
                         />
                         <p>25 minutes</p>
@@ -160,7 +160,7 @@ export default function Home() {
                     <div className="home-recipe-time-dificulty">
                       <div>
                         <img
-                          src="https://uxwing.com/wp-content/themes/uxwing/download/time-and-date/clock-line-icon.png"
+                          src="https://cdn-icons-png.flaticon.com/128/6834/6834351.png"
                           alt="time taken"
                         />
                         <p>50 minutes</p>
@@ -195,7 +195,7 @@ export default function Home() {
                     <div className="home-recipe-time-dificulty">
                       <div>
                         <img
-                          src="https://uxwing.com/wp-content/themes/uxwing/download/time-and-date/clock-line-icon.png"
+                          src="https://cdn-icons-png.flaticon.com/128/6834/6834351.png"
                           alt="time taken"
                         />
                         <p>30 minutes</p>
@@ -229,7 +229,7 @@ export default function Home() {
                     <div className="home-recipe-time-dificulty">
                       <div>
                         <img
-                          src="https://uxwing.com/wp-content/themes/uxwing/download/time-and-date/clock-line-icon.png"
+                          src="https://cdn-icons-png.flaticon.com/128/6834/6834351.png"
                           alt="time taken"
                         />
                         <p>30 minutes</p>
@@ -264,7 +264,7 @@ export default function Home() {
                     <div className="home-recipe-time-dificulty">
                       <div>
                         <img
-                          src="https://uxwing.com/wp-content/themes/uxwing/download/time-and-date/clock-line-icon.png"
+                          src="https://cdn-icons-png.flaticon.com/128/6834/6834351.png"
                           alt="time taken"
                         />
                         <p>35 minutes</p>
@@ -299,7 +299,7 @@ export default function Home() {
                     <div className="home-recipe-time-dificulty">
                       <div>
                         <img
-                          src="https://uxwing.com/wp-content/themes/uxwing/download/time-and-date/clock-line-icon.png"
+                          src="https://cdn-icons-png.flaticon.com/128/6834/6834351.png"
                           alt="time taken"
                         />
                         <p>30 minutes</p>

@@ -35,7 +35,7 @@ export default function Navbar({ setQuery, getNavQuery }) {
         <div className="media-icons">
           <Link to="https://www.linkedin.com/in/shreya-masta/">
             <img
-              src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/linkedin-app-white-icon.png"
+              src="https://cdn-icons-png.flaticon.com/128/3536/3536505.png"
               alt="linkedIn"
             />
           </Link>
@@ -47,8 +47,8 @@ export default function Navbar({ setQuery, getNavQuery }) {
           </Link>
           <Link to="https://github.com/Sherry-m03">
             <img
-              src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/github-white-icon.png"
-              alt="linkedIn"
+              src="https://cdn-icons-png.flaticon.com/128/3291/3291695.png"
+              alt="github"
             />
           </Link>
         </div>
